@@ -95,6 +95,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="IDistance.cs" />
     <Compile Include="Observation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
