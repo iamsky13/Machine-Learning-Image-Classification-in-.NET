@@ -16,8 +16,8 @@ namespace image_classification
 
         public void LoadProgram()
         {
-           var trainingPath = "trainingsample.csv";
-                var training = DataReader.ReadObservations(trainingPath);
+           var trainingPath = @Server.MapPath(".")+"/train.csv";
+           var training = DataReader.ReadObservations(trainingPath);
                // Console.ReadLine();
            
         }
