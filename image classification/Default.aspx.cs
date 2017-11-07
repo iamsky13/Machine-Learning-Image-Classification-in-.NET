@@ -11,7 +11,15 @@ namespace image_classification
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            LoadProgram();
+        }
 
+        public void LoadProgram()
+        {
+           var trainingPath = @"PATH-ON-YOUR-MACHINE\trainingsample.csv";
+                var training = DataReader.ReadObservations(trainingPath);
+               // Console.ReadLine();
+           
         }
     }
 }
