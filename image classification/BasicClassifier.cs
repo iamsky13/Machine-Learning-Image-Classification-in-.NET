@@ -13,8 +13,7 @@ namespace image_classification
         {
             this.distance = distance;
         }
-        public void Train(IEnumerable<Observation>
-        trainingSet)
+        public void Train(IEnumerable<Observation> trainingSet)
         {
             this.data = trainingSet;
         }
