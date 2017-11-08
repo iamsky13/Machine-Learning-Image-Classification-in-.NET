@@ -26,7 +26,7 @@ namespace image_classification
             .Skip(1)
             .Select(ObservationFactory)
             .ToArray();
-            return data;
+             return data;
         }
     }
 

@@ -71,6 +71,8 @@
     <Content Include="train.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="trainingsamples.csv" />
+    <Content Include="validationsample.csv" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
