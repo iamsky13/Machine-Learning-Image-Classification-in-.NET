@@ -27,7 +27,7 @@ namespace image_classification
             
             var distance = new ManhattanDistance();
             var classifier = new BasicClassifier(distance);
-            var trainingPath = @Server.MapPath(".") + "/trainingsample.csv";
+            var trainingPath = @Server.MapPath(".") + "/trainingsamples.csv";
             var training = DataReader.ReadObservations(trainingPath);
             classifier.Train(training);
             var validationPath = @Server.MapPath(".") + "/validationsample.csv";
