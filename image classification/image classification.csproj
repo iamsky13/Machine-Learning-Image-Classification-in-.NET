@@ -84,6 +84,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasicClassifier.cs" />
     <Compile Include="DataReader.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -95,6 +96,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="IClassifier.cs" />
     <Compile Include="IDistance.cs" />
     <Compile Include="ManhattanDistance.cs" />
     <Compile Include="Observation.cs" />

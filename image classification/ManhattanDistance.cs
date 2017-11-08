@@ -22,5 +22,5 @@ namespace image_classification
             return distance;
         }
     }
-    }
+    
 }
