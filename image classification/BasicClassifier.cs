@@ -23,8 +23,7 @@ namespace image_classification
             var shortest = Double.MaxValue;
             foreach (Observation obs in this.data)
             {
-                var dist = this.distance.Between(obs.Pixels,
-                pixels);
+                var dist = this.distance.Between(obs.Pixels,pixels);
                 if (dist < shortest)
                 {
                     shortest = dist;

@@ -13,9 +13,7 @@ namespace image_classification
             .Select(obs => Score(obs, classifier))
             .Average();
         }
-        private static double Score(
-        Observation obs,
-        IClassifier classifier)
+        private static double Score(Observation obs,IClassifier classifier)
         {
             if (classifier.Predict(obs.Pixels) == obs.Label)
                 return 1.0;

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,7 +12,10 @@ namespace image_classification
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Console.WriteLine("test");
+            Debug.Write("test");
             LoadProgram();
+
         }
 
         public void LoadProgram()
@@ -33,8 +37,12 @@ namespace image_classification
             var validationPath = @Server.MapPath(".") + "/validationsample.csv";
             var validation = DataReader.ReadObservations(validationPath);
             var correct = Evaluator.Correct(validation, classifier);
-            Console.WriteLine("Correctly classified: {0:P2}",  correct);
-            Console.ReadLine();
+
+            //Console.WriteLine("Correctly classified: {0:P2}",  correct);
+            //Console.ReadLine();
+            Debug.Write("Ok");
+            Debug.Write("Correctly classified: {0:P2}", correct.ToString());
+            
         }
      }
 }
