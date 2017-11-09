@@ -13,18 +13,12 @@ namespace image_classification
         protected void Page_Load(object sender, EventArgs e)
         {
             //Console.WriteLine("test");
-            Debug.Write("test");
-            LoadProgram();
+            //Debug.Write("test");
+            
 
         }
 
-        public void LoadProgram()
-        {
-           var trainingPath = @Server.MapPath(".")+"/train.csv";
-           var training = DataReader.ReadObservations(trainingPath);
-               // Console.ReadLine();
-           
-        }
+      
 
         public void validate_click(object sender, EventArgs e)
         {
